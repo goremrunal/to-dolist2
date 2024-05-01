@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="first.css">  
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-header">
+            <img src="download.png" alt="Logo">
+        </div>
+        <ul class="links">
+            <li><a href="#">To Do List</a></li>
+        </ul>
+        <div class="btn">
+            <input type="checkbox" id="toggle-btn">
+            <label for="toggle-btn" class="toggle-label"></label>
+        </div>
+        
+        
+        </div>
+    </div>
+    
+
+
+    <div class="datetime">  
+        <div class="time">
+            <span id="hour">00:</span>    
+            <span id="minutes">00:</span>    
+            <span id="seconds">00:</span>   
+            <span id="period">AM</span>   
+        </div>    
+        <div class="date">   
+            <span id="dayname">Day</span>    
+            <span id="month">Month</span>   
+            <span id="daynum">00</span> 
+            <span id="year">Year</span>
+            <div>  
+                
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="task-box" >
+            <h2>Total Tasks:</h2>
+            <span id="totalTasksCount">0</span>
+        </div>
+        <div class="task-box">
+            <h2>Completed Tasks:</h2>
+            <ul id="completedTasksList">0</ul>
+        </div>
+        <div class="task-box" >
+            <h2>Remaining Tasks:</h2>
+            <ul id="remainingTasksList">0</ul>
+        </div>
+        </div>
+    
+        
+    <div class="container2">
+        <div class=ToDoApp>
+            <h2>To-Do List<img src="images.jpeg"></h2>
+        <div class="row">
+            <input type="text" placeholder="Enter Your Task" id="inputbox">
+            <button onclick="Add()">Add</button>
+        </div>
+    
+            <ul id="list-container">
+            
+            </ul>
+            
+            <ul id="completed-container">
+                
+            </ul>
+            
+           </ul> 
+        </div>
+       </div>
+       <div class="row">
+        <button onclick="ClearAll()">Clear All Tasks</button>
+    </div>
+    
+    
+    <script src="first.js"></script>
+</body>
+</html>
